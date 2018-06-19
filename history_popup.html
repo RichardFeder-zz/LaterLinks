@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <script src='popup.js'></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <style>
+        div{
+            background-color: #283593;
+            width: 660px;
+            height: 70px;
+            box-shadow: 5px 5px 7px gray;
+        }
+        title{
+            horiz-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            word-wrap: break-word;
+        }
+        button{
+            background-color: #E0E0E0;
+            border-radius:3px;
+            border:1px outset #E0E0E0;
+            display:inline-block;
+            font-weight: 100;
+        }
+        button:hover {
+            font-weight: 500;
+            border:1px inset #E0E0E0;
+        }
+        h1{
+            position: absolute;
+            font-size: 18pt;
+            color: #E0E0E0;
+            left: 15px;
+            top: 20px;
+            font-family: Arial Rounded MT;
+        }
+        footer{
+            font-size: 8pt;
+        }
+        caption{
+            position: absolute;
+            right: 225px;
+            font-size: 12pt;
+        }
+        #clear_history{
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #save_bookmarks{
+            position: absolute;
+            left: 112px;
+            top: 15px;
+        }
+        tr:hover{background-color:#f5f5f5}
+    </style>
+</head>
+<title class="title">History</title>
+<div>
+<button id = "clear_history" onclick="_gaq.push(['_trackEvent', 'clear_history', 'clicked'])">Clear History</button>
+<button id = "save_bookmarks" onclick="_gaq.push(['_trackEvent', 'save_bookmarks', 'clicked'])">Save to Bookmarks</button>
+<br>
+<h1>History</h1>
+</div>
+<br>
+<body>
+    <table id="links">
+    </table>
+</body>
+<br><br>
+<footer>
+  LaterLinks created by Richard Feder. For questions regarding LaterLinks, please contact
+  <a href = "mailto:laterlinksextension@gmail.com">laterlinksextension@gmail.com</a>
+</footer>
+</html>
